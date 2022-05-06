@@ -1,0 +1,27 @@
+var NAVTREEINDEX0 =
+{
+"index.html":[],
+"md__r_e_a_d_m_e.html":[1],
+"md_install_readme.html":[0],
+"md_install_readme.html#autotoc_md1":[0,0],
+"md_install_readme.html#autotoc_md10":[0,1,1,1],
+"md_install_readme.html#autotoc_md11":[0,1,1,2],
+"md_install_readme.html#autotoc_md12":[0,1,1,3],
+"md_install_readme.html#autotoc_md13":[0,1,1,3,0],
+"md_install_readme.html#autotoc_md14":[0,1,1,3,1],
+"md_install_readme.html#autotoc_md2":[0,0,0],
+"md_install_readme.html#autotoc_md3":[0,1],
+"md_install_readme.html#autotoc_md4":[0,1,0],
+"md_install_readme.html#autotoc_md5":[0,1,0,0],
+"md_install_readme.html#autotoc_md6":[0,1,0,1],
+"md_install_readme.html#autotoc_md7":[0,1,0,2],
+"md_install_readme.html#autotoc_md8":[0,1,1],
+"md_install_readme.html#autotoc_md9":[0,1,1,0],
+"namespacemembers.html":[2,1,0],
+"namespacemembers_vars.html":[2,1,1],
+"namespaceplay__response.html":[2,0,0],
+"namespaceplay__response_a9e4e01f0a1e476289fe246dcb5433cf5.html#a9e4e01f0a1e476289fe246dcb5433cf5":[2,0,0,1],
+"namespaceplay__response_aad4b970ef1363f37522314b2308381e6.html#aad4b970ef1363f37522314b2308381e6":[2,0,0,0],
+"namespaces.html":[2,0],
+"pages.html":[]
+};
