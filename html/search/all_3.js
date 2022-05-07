@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['readme_0',['README',['../md__r_e_a_d_m_e.html',1,'']]]
+  ['install_5freadme_2emd_0',['install_readme.md',['../install__readme_8md.html',1,'']]],
+  ['installation_20and_20setup_1',['Installation and Setup',['../md_install_readme.html',1,'']]]
 ];

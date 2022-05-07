@@ -25,23 +25,41 @@
 var NAVTREE =
 [
   [ "Pepper Google Assistant", "index.html", [
-    [ "Installation and Setup", "md_install_readme.html", [
-      [ "Development Environment", "md_install_readme.html#autotoc_md1", [
-        [ "Operating System (OS)", "md_install_readme.html#autotoc_md2", null ]
+    [ "driver.sh", "md_driver_docs.html", [
+      [ "SSH", "md_driver_docs.html#autotoc_md1", [
+        [ "Basic syntax: ssh [user]@[hostname]", "md_driver_docs.html#autotoc_md2", null ],
+        [ "Example usage", "md_driver_docs.html#autotoc_md3", null ],
+        [ "Additional documentation", "md_driver_docs.html#autotoc_md4", null ]
       ] ],
-      [ "Installation and Setup - Software Development Kits (SDKs)", "md_install_readme.html#autotoc_md3", [
-        [ "Google Assistant SDK", "md_install_readme.html#autotoc_md4", [
-          [ "Setup a virtual environment", "md_install_readme.html#autotoc_md5", null ],
-          [ "Install Google Assistant SDK dependencies", "md_install_readme.html#autotoc_md6", null ],
-          [ "Install Google Assistant SDK package using pip", "md_install_readme.html#autotoc_md7", null ]
+      [ "arecord", "md_driver_docs.html#autotoc_md6", [
+        [ "Basic syntax: arecord [flags] [filename]", "md_driver_docs.html#autotoc_md7", null ],
+        [ "Example usage", "md_driver_docs.html#autotoc_md8", null ],
+        [ "Additional documentation", "md_driver_docs.html#autotoc_md9", null ]
+      ] ],
+      [ "scp", "md_driver_docs.html#autotoc_md11", [
+        [ "Basic syntax: scp [[user@]host1:]file1 ... [[user@]host1:]file2", "md_driver_docs.html#autotoc_md12", null ],
+        [ "Example usage", "md_driver_docs.html#autotoc_md13", null ],
+        [ "Additional documentation", "md_driver_docs.html#autotoc_md14", null ]
+      ] ]
+    ] ],
+    [ "Official documentation from Google", "md_google_assistant_sdk_docs.html", null ],
+    [ "Installation and Setup", "md_install_readme.html", [
+      [ "Development Environment", "md_install_readme.html#autotoc_md17", [
+        [ "Operating System (OS)", "md_install_readme.html#autotoc_md18", null ]
+      ] ],
+      [ "Installation and Setup - Software Development Kits (SDKs)", "md_install_readme.html#autotoc_md19", [
+        [ "Google Assistant SDK", "md_install_readme.html#autotoc_md20", [
+          [ "Setup a virtual environment", "md_install_readme.html#autotoc_md21", null ],
+          [ "Install Google Assistant SDK dependencies", "md_install_readme.html#autotoc_md22", null ],
+          [ "Install Google Assistant SDK package using pip", "md_install_readme.html#autotoc_md23", null ]
         ] ],
-        [ "SoftBank Pynaoqi SDK", "md_install_readme.html#autotoc_md8", [
-          [ "1. Verify Python 2.7 installation", "md_install_readme.html#autotoc_md9", null ],
-          [ "2. Download NAOqi for Python", "md_install_readme.html#autotoc_md10", null ],
-          [ "3. Extract the NAOqi SDK", "md_install_readme.html#autotoc_md11", null ],
-          [ "4. Add SDK to Python path", "md_install_readme.html#autotoc_md12", [
-            [ "From terminal:", "md_install_readme.html#autotoc_md13", null ],
-            [ "Within a script:", "md_install_readme.html#autotoc_md14", null ]
+        [ "SoftBank Pynaoqi SDK", "md_install_readme.html#autotoc_md24", [
+          [ "1. Verify Python 2.7 installation", "md_install_readme.html#autotoc_md25", null ],
+          [ "2. Download NAOqi for Python", "md_install_readme.html#autotoc_md26", null ],
+          [ "3. Extract the NAOqi SDK", "md_install_readme.html#autotoc_md27", null ],
+          [ "4. Add SDK to Python path", "md_install_readme.html#autotoc_md28", [
+            [ "From terminal:", "md_install_readme.html#autotoc_md29", null ],
+            [ "Within a script:", "md_install_readme.html#autotoc_md30", null ]
           ] ]
         ] ]
       ] ]
@@ -53,13 +71,16 @@ var NAVTREE =
         [ "All", "namespacemembers.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ]
       ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"files.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

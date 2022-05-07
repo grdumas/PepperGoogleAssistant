@@ -1,24 +1,27 @@
 var indexSectionsWithContent =
 {
-  0: "aipr",
+  0: "adgiopr",
   1: "p",
-  2: "ap",
-  3: "ir"
+  2: "dgipr",
+  3: "ap",
+  4: "dior"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "namespaces",
-  2: "variables",
-  3: "pages"
+  2: "files",
+  3: "variables",
+  4: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
   1: "Namespaces",
-  2: "Variables",
-  3: "Pages"
+  2: "Files",
+  3: "Variables",
+  4: "Pages"
 };
 

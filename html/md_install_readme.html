@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -28,6 +33,21 @@
    <div id="projectname">Pepper Google Assistant
    </div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -39,17 +59,6 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -85,48 +94,48 @@ $(document).ready(function(){initNavTree('md_install_readme.html',''); initResiz
   <div class="headertitle"><div class="title">Installation and Setup </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md17"></a>
 Development Environment</h1>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 Operating System (OS)</h2>
-<p >This project was developed on a workstation running <a href="https://ubuntu.com/16-04" target="_blank">Ubuntu 16.04 Xenial Xerus</a> in the interest of compatibility with SoftBank software. To download, please see the <a href="https://releases.ubuntu.com/" target="_blank">ubuntu releases website</a>. The documentation which follows covers use on Ubuntu 16.04. At this time, functionality on later Ubuntu releases, other Linux distributions, Windows, and Mac systems is untested. If using another operating system, please adjust instructions referencing various utilities found on the Ubuntu distribution, such as the <a href="https://ubuntu.com/server/docs/package-management" target="_blank">apt package manager</a>, to work with your environment.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<p >This project was developed on a workstation running <a href="https://ubuntu.com/16-04">Ubuntu 16.04 Xenial Xerus</a> in the interest of compatibility with SoftBank software. To download, please see the <a href="https://releases.ubuntu.com/">ubuntu releases website</a>. The documentation which follows covers use on Ubuntu 16.04. At this time, functionality on later Ubuntu releases, other Linux distributions, Windows, and Mac systems is untested. If using another operating system, please adjust instructions referencing various utilities found on the Ubuntu distribution, such as the <a href="https://ubuntu.com/server/docs/package-management">apt package manager</a>, to work with your environment.</p>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Installation and Setup - Software Development Kits (SDKs)</h1>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Google Assistant SDK</h2>
 <p >Note: adapted from the Google Assistant SDK guide 'Introduction to the Google Assistant Service'. Please consult the official documentation at <a href="https://developers.google.com/assistant/sdk/guides/service/python">https://developers.google.com/assistant/sdk/guides/service/python</a></p>
-<h3><a class="anchor" id="autotoc_md5"></a>
+<h3><a class="anchor" id="autotoc_md21"></a>
 Setup a virtual environment</h3>
 <p >In terminal (for Python 2.7 implementation): </p><div class="fragment"><div class="line">sudo apt-get update</div>
 <div class="line">sudo apt-get install python-dev python-virtualenv</div>
 <div class="line">virtualenv env --no-site-packages</div>
 <div class="line">env/bin/python -m pip install --upgrade pip setuptools wheel</div>
 <div class="line">source env/bin/activate</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md6"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md22"></a>
 Install Google Assistant SDK dependencies</h3>
 <p >Run the following from terminal within the activated virtual environment </p><div class="fragment"><div class="line">sudo apt-get install portaudio19-dev libffi-dev libssl-dev</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md7"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md23"></a>
 Install Google Assistant SDK package using pip</h3>
 <div class="fragment"><div class="line">python -m pip install --upgrade google-assistant-sdk[samples]</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md24"></a>
 SoftBank Pynaoqi SDK</h2>
 <p >Note: adapted from the SofBank Robotics 'Python SDK - Installation Guide', which can be found at <a href="https://developer.softbankrobotics.com/nao6/naoqi-developer-guide/sdks/python-sdk/python-sdk-installation-guide">https://developer.softbankrobotics.com/nao6/naoqi-developer-guide/sdks/python-sdk/python-sdk-installation-guide</a></p>
-<h3><a class="anchor" id="autotoc_md9"></a>
+<h3><a class="anchor" id="autotoc_md25"></a>
 1. Verify Python 2.7 installation</h3>
-<h3><a class="anchor" id="autotoc_md10"></a>
+<h3><a class="anchor" id="autotoc_md26"></a>
 2. Download NAOqi for Python</h3>
-<p >From the <a href="https://developer.softbankrobotics.com/nao6/downloads/nao6-downloads-linux" target="_blank">NAO6 Downloads - Linux</a> page, select "Python SDK". As of writing the latest available version was pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148. <br  />
+<p >From the <a href="https://developer.softbankrobotics.com/nao6/downloads/nao6-downloads-linux">NAO6 Downloads - Linux</a> page, select "Python SDK". As of writing the latest available version was pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148. <br  />
 </p>
-<h3><a class="anchor" id="autotoc_md11"></a>
+<h3><a class="anchor" id="autotoc_md27"></a>
 3. Extract the NAOqi SDK</h3>
 <p >In terminal or a file manager, extract the SDK from the downloaded tarball.</p>
-<h3><a class="anchor" id="autotoc_md12"></a>
+<h3><a class="anchor" id="autotoc_md28"></a>
 4. Add SDK to Python path</h3>
-<h4><a class="anchor" id="autotoc_md13"></a>
+<h4><a class="anchor" id="autotoc_md29"></a>
 From terminal:</h4>
 <p >To temporarily add Pynaoqi to the Python path, open terminal and run </p><div class="fragment"><div class="line">export PYTHONPATH=${PYTHONPATH}:/path/to/python-sdk/lib/python2.7/site-packages</div>
 </div><!-- fragment --><p> The SDK will remain enabled within that terminal until the window is closed.</p>
-<h4><a class="anchor" id="autotoc_md14"></a>
+<h4><a class="anchor" id="autotoc_md30"></a>
 Within a script:</h4>
 <p >The Pynaoqi SDK can also be enabled from within a script to simplify the development process. The above could be accomplished in Python as follows:</p>
 <div class="fragment"><div class="line"><span class="keyword">import</span> sys</div>
