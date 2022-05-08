@@ -1,7 +1,7 @@
 """@package docstring
-Documentation for this module.
+Documentation for the play_response module.
 
-More details.
+This script directs a Pepper robot to play an audio file containing the response of Google Assistant.
 """
 
 import sys
@@ -18,7 +18,7 @@ pepper = '192.168.1.140'
 
 ## Documentation for ALProxy object
 #
-# ALProxy object allows the creation of a proxy to a module
+# ALProxy object allows the creation of a proxy to a NAOqi module
 #
 # syntax is ALProxy(name, ip, port)
 # @param name The name of the module

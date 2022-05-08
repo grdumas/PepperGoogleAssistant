@@ -42,7 +42,7 @@ var NAVTREE =
         [ "Additional documentation", "md_driver_docs.html#autotoc_md14", null ]
       ] ]
     ] ],
-    [ "Official documentation from Google", "md_google_assistant_sdk_docs.html", null ],
+    [ "Official documentation for Google Assistant SDK", "md_google_assistant_sdk_docs.html", null ],
     [ "Installation and Setup", "md_install_readme.html", [
       [ "Development Environment", "md_install_readme.html#autotoc_md17", [
         [ "Operating System (OS)", "md_install_readme.html#autotoc_md18", null ]
@@ -62,6 +62,22 @@ var NAVTREE =
             [ "Within a script:", "md_install_readme.html#autotoc_md30", null ]
           ] ]
         ] ]
+      ] ]
+    ] ],
+    [ "Official documentation for NAOqi Python SDK", "md__n_a_oqi_python_sdk_docs.html", null ],
+    [ "play_response.py", "md_play_response_docs.html", [
+      [ "sys.path.append(...)", "md_play_response_docs.html#autotoc_md33", [
+        [ "Example", "md_play_response_docs.html#autotoc_md34", null ]
+      ] ],
+      [ "Pepper object", "md_play_response_docs.html#autotoc_md36", [
+        [ "Example", "md_play_response_docs.html#autotoc_md37", null ]
+      ] ],
+      [ "ALProxy object", "md_play_response_docs.html#autotoc_md39", [
+        [ "Syntax", "md_play_response_docs.html#autotoc_md40", null ]
+      ] ],
+      [ "playFile() method", "md_play_response_docs.html#autotoc_md42", [
+        [ "Syntax", "md_play_response_docs.html#autotoc_md43", null ],
+        [ "Example", "md_play_response_docs.html#autotoc_md44", null ]
       ] ]
     ] ],
     [ "README", "md__r_e_a_d_m_e.html", null ],

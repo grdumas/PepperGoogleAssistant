@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Pepper Google Assistant: Official documentation for Google Assistant SDK</title>
+<title>Pepper Google Assistant: play_response.py</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md_google_assistant_sdk_docs.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md_play_response_docs.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -91,16 +91,55 @@ $(document).ready(function(){initNavTree('md_google_assistant_sdk_docs.html','')
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Official documentation for Google Assistant SDK </div></div>
+  <div class="headertitle"><div class="title"><a class="el" href="play__response_8py.html">play_response.py</a> </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><ul>
-<li><a href="https://developers.google.com/assistant/sdk/guides/service/python/embed/config-dev-project-and-account">Configure a Developer Project and Account Settings</a></li>
-<li><a href="https://developers.google.com/assistant/sdk/guides/service/python/embed/register-device">Register the Device Model</a></li>
-<li><a href="https://developers.google.com/assistant/sdk/guides/service/python/embed/install-sample">Install the SDK and Sample Code</a></li>
-<li><a href="https://developers.google.com/assistant/sdk/guides/service/python/embed/run-sample">Run the Sample Code</a> </li>
+<div class="textblock"><p >This script directs a Pepper robot to play an audio file containing the response of Google Assistant.</p>
+<h1><a class="anchor" id="autotoc_md33"></a>
+sys.path.append(...)</h1>
+<p >Adds the NAOqi Python SDK to the PATH.</p>
+<h2><a class="anchor" id="autotoc_md34"></a>
+Example</h2>
+<div class="fragment"><div class="line">sys.path.append(&#39;/home/user/pynaoqi/lib/python2.7/site-packages&#39;)</div>
+</div><!-- fragment --><ul>
+<li>Replace '/home/user/pynaoqi/lib/python2.7/site-packages' with the filepath where your NAOqi Python SDK is stored.</li>
 </ul>
-</div></div><!-- contents -->
+<hr  />
+<h1><a class="anchor" id="autotoc_md36"></a>
+Pepper object</h1>
+<ul>
+<li>Stores the IP address of the Pepper robot as a string.</li>
+<li>To find your Pepper's IP, press the circular button on the front of the robot's chassis, beneath its tablet.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md37"></a>
+Example</h2>
+<div class="fragment"><div class="line">pepper = &#39;192.168.1.140&#39;</div>
+</div><!-- fragment --><hr  />
+<h1><a class="anchor" id="autotoc_md39"></a>
+ALProxy object</h1>
+<p >ALProxy object allows the creation of a proxy to a NAOqi module</p>
+<h2><a class="anchor" id="autotoc_md40"></a>
+Syntax</h2>
+<div class="fragment"><div class="line">ALProxy(name, ip, port)</div>
+</div><!-- fragment --><ul>
+<li><em>name</em> The name of the module</li>
+<li><em>ip</em> The IP address of the robot</li>
+<li><em>port</em> The network port to access on the robot. Default is 9559.</li>
+</ul>
+<hr  />
+<h1><a class="anchor" id="autotoc_md42"></a>
+playFile() method</h1>
+<p >Begin playing a specified file on Pepper.</p>
+<h2><a class="anchor" id="autotoc_md43"></a>
+Syntax</h2>
+<div class="fragment"><div class="line">object.playFile(filename)</div>
+</div><!-- fragment --><ul>
+<li><em>filename</em> Is the absolute path of the audio file.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md44"></a>
+Example</h2>
+<div class="fragment"><div class="line">audio.playFile(&quot;/home/nao/syn.wav&quot;)</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
